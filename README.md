@@ -21,5 +21,11 @@ data rate. The pull-up resistors, commonly used in open-drain applications, have
 that an external resistor is not needed. While this device is designed for open-drain applications, the device can 
 also translate push-pull CMOS logic outputs
 
+To ensure the Hi-Z state during power-up or powerdown
+periods, tie OE to GND through a pull-down
+resistor. The minimum value of the resistor is
+determined by the current-sourcing capability of the
+driver.
+
 Right description:
 http://we.easyelectronics.ru/Shematech/soglasovanie-logicheskih-urovney-5v-i-33v-ustroystv.html
