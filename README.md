@@ -10,3 +10,16 @@
 Единственным, но устранимым недостатком конвертера-преобразователя является некорректная работа с интерфейсом I2C: сенсор определения направления сбивается, когда в схеме присутствуют резисторы большого сопротивления. Если их невозможно убрать, то следует использовать резисторы номиналом более 50 кОм.
 
 Направление преобразования распознаётся и выполняется автоматически. Обязательным условием является общий отрицательный вывод для всех источников питания, в том числе и раздельных. Чтобы модуль работал, необходимо припаять два коннектора, идущие в комплекте, к плате конвертера.
+
+UPD:
+datasheet:
+
+The TXS0108E device is a directionless voltage-level translator specifically designed for translating logic voltage 
+levels. The A-port accepts I/O voltages ranging from 1.2 V to 3.6 V. The B-port accepts I/O voltages from 1.65 V 
+to 5.5 V. The device uses pass gate architecture with edge rate accelerators (one shots) to improve the overall 
+data rate. The pull-up resistors, commonly used in open-drain applications, have been conveniently integrated so 
+that an external resistor is not needed. While this device is designed for open-drain applications, the device can 
+also translate push-pull CMOS logic outputs
+
+Right description:
+http://we.easyelectronics.ru/Shematech/soglasovanie-logicheskih-urovney-5v-i-33v-ustroystv.html
